@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+td > img{
+    width: 50%;
+}
+
+table{
+    background-image: linear-gradient(to top right, blue, limegreen);
+    border: 2px double black;
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    caption-side: bottom;
+}
+
+caption{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic red;
+}
+
+td{
+    border: solid black;
+    text-align: center;
+}
+
+th{
+    border: 3px solid black;
+    
+}
+
+/** Clases */
+.txt-centrado{
+    text-align: center;
+}

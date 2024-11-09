@@ -1,0 +1,42 @@
+/*!
+Reto 1 Aitor Jerez Clemente
+17/10/2024
+*/
+
+body{
+    background-color: rgb(180, 156, 22);
+    color: darkblue;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px
+}
+
+h1{
+    color: darkblue;
+}
+
+span1{
+    color: red;
+}
+
+span2{
+    color: greenyellow;
+}
+
+span3{
+    color: yellow;
+}
+
+pre{
+    color: white;
+    float: left;
+    margin-left: 23%;
+    padding: px;
+    text-align: center;
+}
+
+img{
+    float: right;
+    margin-right: 23%;
+}

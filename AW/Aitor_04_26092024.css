@@ -1,0 +1,36 @@
+/*!
+    Aitor Jerez Clemente
+    Septiembre 2024
+*/
+
+* {
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+div>a {
+    padding: 2.5rem;
+    margin: 1rem;
+    display: block;
+    font-size: 2.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    background-color: aquamarine;
+    width: 15rem;
+    border-radius: 2.5rem;
+    border: 0.5rem double black;
+    border-style: ridge;
+    color: white;
+}
+
+.As {background-color: blueviolet;}
+
+.País {background-color: aqua;}
+
+.Moodle {background-color: cadetblue;}
+
+.Moises {background-color: chocolate;}
