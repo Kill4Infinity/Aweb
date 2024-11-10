@@ -1,0 +1,66 @@
+/*
+Practica 6  24/10/2024
+Aitor Jerez Clemente
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.menuV{
+    float: left;
+    width: 26%;
+    overflow: hidden;
+    border: 0.5rem double;
+}
+
+.menuV a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    display: block;
+}
+
+.menuV a:hover{
+    background-color: white;
+    color: black;
+}
+
+.menuH{
+    overflow: hidden;
+    border: 0.5rem double;
+}
+
+.menuH a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.menuH a:hover{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    position: fixed;
+    bottom: 0rem;
+    text-align: center;
+    
+}
+
+img{
+    float: left;
+    width: 70%;
+    border: 0.5rem double;
+}
