@@ -1,0 +1,249 @@
+/** EduLux Trabajo
+ * !Aitor Jerez Clemente
+ * ?14/11/2024
+ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #6a1b9a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-right: 10px;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding-left: 320px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.banner {
+    background-image: url('./Images/friends-spending-time-together.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(106, 27, 154, 0.6);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeInDown 1s;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    animation: fadeInUp 1s;
+}
+
+.banner-content .button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    animation: fadeInUp 1s;
+}
+
+.banner-content .button:hover {
+    background-color: #e6b800;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about, .rooms, .testimonials {
+    background-color: #f9f9f9;
+}
+
+.about h2, .services h2, .rooms h2, .testimonials h2 {
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about h2::after, .services h2::after, .rooms h2::after, .testimonials h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #6a1b9a;
+    display: block;
+    margin: 10px auto;
+}
+
+.services .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1 1 30%;
+    max-width: 30%;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.service-card i {
+    font-size: 3em;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5e1684;
+}
+
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .contact-info, .quick-links, .newsletter {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ffcc00;
+}
+
+footer .newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .newsletter button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+footer .newsletter button:hover {
+    background-color: #e6b800;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:37.5rem) and (min-width:25rem){
+    CODIGO CSS
+}
