@@ -1,0 +1,107 @@
+/** Tarea 12. Sombras y degradados 
+ * !Aitor Jerez Clemente
+ * ?08/11/2024
+ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1.25rem;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.descripcion {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.cajas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.25rem;
+}
+
+.caja {
+    width: 9.375rem;
+    height: 9.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.sombra1 {
+    background-color: #4CAF50;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2);
+}
+
+.sombra2 {
+    background-color: #2196F3;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.4);
+}
+
+.titulos {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    margin: .625rem 0;
+}
+
+.titulo.sombra1 {
+    text-shadow: .125rem .125rem .25rem rgba(0, 0, 0, 0.5);
+}
+
+.titulo.sombra2 {
+    text-shadow: .125rem .125rem .25rem rgba(0, 0, 0, 0.8);
+}
+
+.degradados {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.25rem;
+}
+
+.degradado-lineal1 {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.degradado-lineal2 {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.degradado-radial1 {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}
+
+.degradado-radial2 {
+    width: 6.25rem;
+    height: 6.25rem;
+    background: radial-gradient(circle, #6a11cb, #2575fc);
+}
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(./Imagenes/sofa.jpg);
+    background-size: cover;
+    padding: 8rem 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sobre-nosotros h2{
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+}

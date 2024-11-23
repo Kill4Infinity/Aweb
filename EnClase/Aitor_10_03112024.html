@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video, audio y Maps</title>
+    <link rel="stylesheet" href="Aitor_10_03112024.css">
+</head>
+<body>
+    <header>
+        <h1>Video, audio y Maps</h1>
+        <p>Aprender a meter audio y video en una pagina</p>
+    </header>
+
+    <video src="./Videos/191159-889246512_tiny.mp4" loop autoplay controls></video>
+
+    <video loop autoplay muted controls>
+        <source src="./Videos/232185_tiny.mp4" type="video/mp4">
+        Tu navegador no es capaz de reproducir el video.
+    </video>
+
+    <div class="galVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TdK2yxhATdQ"></iframe>
+    </div>
+
+    <audio src="./Audio/relaxing-guitar-loop-v5-245859.mp3" autoplay controls loop></audio>
+
+    <audio autoplay controls loop muted>
+        <source src="./Audio/relaxing-guitar-loop-v5-245859.mp3" type="audio/mp3">
+        <source src="./Audio/relaxing-guitar-loop-v5-245859.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="maps">
+        <iframe width="600" height="450" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.%20Guillermo%20Reyna%2C%2035%2C%2004600%20Hu%C3%A9rcal-Overa%2C%20Almer%C3%ADa&zoom=16&maptype=satellite"></iframe>
+    </div>
+
+    <footer>Aitor Jerez Clemente @2024</footer>
+</body>
+</html>

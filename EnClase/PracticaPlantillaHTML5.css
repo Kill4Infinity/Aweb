@@ -1,0 +1,42 @@
+/*!
+    Aitor Jerez Clemente
+    Octubre 2024
+*/
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header, footer{
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    text-shadow: 2px -2px 7px brown;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+main{
+
+}
+article{
+
+}
+section{
+
+}
+aside{
+
+}
+
+img{
+    width: 10%;
+}

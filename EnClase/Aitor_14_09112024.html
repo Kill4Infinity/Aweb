@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Aitor_14_09112024.css">
+    <title>Página de Formulario</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Bienvenido</h1>
+        <p>Por favor, completa el siguiente formulario.</p>
+        <div class="rellenar">
+            <form action="contact.php" method="post" class="form" target="_blank">
+                <div class="grupo formulario">
+                    <label for="nombre">Escriba su nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre" required>
+                </div>
+
+                <div class="grupo formulario">
+                    <label for="email">Escriba su correo electrónico:</label>
+                    <input id="email" type="email" name="email" placeholder="Escriba su correo" required>
+                </div>
+
+                <div class="grupo formulario">
+                    <label for="telefono">Número de teléfono:</label>
+                    <input id="telefono" type="tel" name="telefono" placeholder="Escriba su número de teléfono">
+                </div>
+
+                <fieldset class="fieldset">
+                    <legend>Seleccione sus preferencias:</legend>
+                    <div class="radio">
+                        <label for="opcion1">
+                            <input type="radio" id="opcion1" name="opcion" value="opcion1"> Opción 1
+                        </label>
+                        <label for="opcion2">
+                            <input type="radio" id="opcion2" name="opcion" value="opcion2"> Opción 2
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label for="checkbox1">
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="valor1"> Opción de checkbox
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="grupo formulario">
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escriba sus comentarios aquí"></textarea>
+                </div>
+
+                <div class="grupo formulario">
+                    <label for="archivo">Subir un archivo:</label>
+                    <input id="archivo" type="file" name="archivo">
+                </div>
+
+                <div class="grupo formulario">
+                    <label for="select-simple">Seleccione una opción:</label>
+                    <select id="select-simple" name="select-simple">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                    </select>
+                </div>
+
+                <div class="grupo formulario">
+                    <label for="select-multiple">Seleccione varias opciones:</label>
+                    <select id="select-multiple" name="select-multiple[]" multiple>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

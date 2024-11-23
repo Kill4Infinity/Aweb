@@ -1,0 +1,50 @@
+/** Tarea numero 13 Tablas
+ * !Aitor Jerez Clemente
+ * ?09/11/2024
+ */
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 1.25rem;
+    background: linear-gradient(135deg, #f0f4c3, #c5e1a5);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.25rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+th, td {
+    border: .0625rem solid #ddd;
+    padding: .5rem;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+img {
+    max-width: 6.25rem;
+    height: auto;
+    border-radius: .3125rem;
+}
