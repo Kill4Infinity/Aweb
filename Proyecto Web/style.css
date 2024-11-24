@@ -244,6 +244,31 @@ footer .newsletter button:hover {
     }
 }
 
-@media (max-width:37.5rem) and (min-width:25rem){
-    CODIGO CSS
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .services .service-cards {
+        flex-direction: column;
+    }
+
+    .service-card {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contact-info, .quick-links, .newsletter {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
