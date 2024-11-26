@@ -3,7 +3,7 @@
  * ?14/11/2024
  */
 
-body {
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ header {
     padding-right: 10px;
 }
 
-header .logo img {
+header .logotipo img {
     height: 100px;
 }
 
@@ -71,24 +71,24 @@ header nav ul li a:hover {
     background: rgba(106, 27, 154, 0.6);
 }
 
-.banner-content {
+.contenido-banner {
     position: relative;
     z-index: 1;
 }
 
-.banner-content h1 {
+.contenido-banner h1 {
     font-size: 2.5em;
     margin: 0;
     animation: fadeInDown 1s;
 }
 
-.banner-content p {
+.contenido-banner p {
     font-size: 1.2em;
     margin: 10px 0;
     animation: fadeInUp 1s;
 }
 
-.banner-content .button {
+.contenido-banner .boton {
     padding: 10px 20px;
     background-color: #ffcc00;
     color: black;
@@ -99,7 +99,7 @@ header nav ul li a:hover {
     animation: fadeInUp 1s;
 }
 
-.banner-content .button:hover {
+.contenido-banner .boton:hover {
     background-color: #e6b800;
 }
 
@@ -108,17 +108,17 @@ section {
     text-align: center;
 }
 
-.about, .rooms, .testimonials {
+.sobre-nosotros, .habitaciones, .testimonios {
     background-color: #f9f9f9;
 }
 
-.about h2, .services h2, .rooms h2, .testimonials h2 {
+.sobre-nosotros h2, .servicios h2, .habitaciones h2, .testimonios h2 {
     color: #6a1b9a;
     margin-bottom: 20px;
     position: relative;
 }
 
-.about h2::after, .services h2::after, .rooms h2::after, .testimonials h2::after {
+.sobre-nosotros h2::after, .servicios h2::after, .habitaciones h2::after, .testimonios h2::after {
     content: "";
     width: 50px;
     height: 3px;
@@ -127,13 +127,13 @@ section {
     margin: 10px auto;
 }
 
-.services .service-cards {
+.servicios .tarjetas-servicio {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.service-card {
+.tarjeta-servicio {
     flex: 1 1 30%;
     max-width: 30%;
     background-color: white;
@@ -146,18 +146,19 @@ section {
     position: relative;
 }
 
-.service-card i {
+.tarjeta-servicio i {
     font-size: 3em;
     color: #6a1b9a;
     margin-bottom: 10px;
 }
 
-.service-card:hover {
+.tarjeta-servicio:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button {
+.boton {
+    display: inline-block;
     padding: 10px 20px;
     background-color: #6a1b9a;
     color: white;
@@ -165,67 +166,84 @@ section {
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-.button:hover {
-    background-color: #5e1684;
+.boton:hover {
+    background-color: #4a0d70;
+}
+
+.info-contacto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-contacto p {
+    margin: 5px 0;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.enlaces-rapidos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.enlaces-rapidos a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.boletin {
+    text-align: center;
+}
+
+.boletin form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.boletin input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.boletin button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boletin button:hover {
+    background-color: #e6b800;
 }
 
 footer {
     background-color: #6a1b9a;
     color: white;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-footer .contact-info, .quick-links, .newsletter {
-    flex: 1 1 30%;
-    max-width: 30%;
-    margin: 10px;
-}
-
-footer .social-media a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5em;
-    transition: color 0.3s;
-}
-
-footer .social-media a:hover {
-    color: #ffcc00;
-}
-
-footer .newsletter form {
-    display: flex;
-    flex-direction: column;
-}
-
-footer .newsletter input {
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-footer .newsletter button {
-    padding: 10px;
-    background-color: #ffcc00;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-footer .newsletter button:hover {
-    background-color: #e6b800;
+    text-align: center;
+    margin-top: 20px;
 }
 
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
     to {
         opacity: 1;
@@ -236,39 +254,10 @@ footer .newsletter button:hover {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        padding-left: 0;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    .services .service-cards {
-        flex-direction: column;
-    }
-
-    .service-card {
-        max-width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer .contact-info, .quick-links, .newsletter {
-        max-width: 100%;
-        margin: 10px 0;
     }
 }
