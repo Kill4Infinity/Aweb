@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de la Residencia</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="./Images/favicon__1_-remo vebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="logotipo">
+            <img src="./Images/EduLux.png" alt="Logo de la Residencia">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Habitaciones</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner-servicios">
+        <div class="contenido-banner">
+            <h1>Nuestros Servicios</h1>
+        </div>
+    </section>
+
+    <section class="carrusel-servicios">
+        <div class="slideshow-contenedor">
+
+            <div class="slide desvanecer">
+                <img src="./Images/Wifi.jpeg" style="width:100%">
+                <div class="texto">Wi-Fi Gratuito: Internet de alta velocidad en todas las áreas.</div>
+            </div>
+
+            <div class="slide desvanecer">
+                <img src="./Images/Gimnasio.jpeg" style="width:100%">
+                <div class="texto">Gimnasio: Equipado con lo último en máquinas de ejercicio.</div>
+            </div>
+
+            <div class="slide desvanecer">
+                <img src="./Images/Biblioteca.jpg" style="width:100%">
+                <div class="texto">Biblioteca: Un espacio tranquilo para estudiar y leer.</div>
+            </div>
+
+            <div class="slide desvanecer">
+                <img src="./Images/Comedor.jpg" style="width:100%">
+                <div class="texto">Comedor: Menús variados y saludables todos los días.</div>
+            </div>
+
+            <div class="slide desvanecer">
+                <img src="./Images/Seguridad.jpg" style="width:100%">
+                <div class="texto">Seguridad 24/7: Personal de seguridad y cámaras en todas las áreas.</div>
+            </div>
+
+            <a class="anterior" onclick="cambiarSlide(-1)">&#10094;</a>
+            <a class="siguiente" onclick="cambiarSlide(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="punto" onclick="slideActual(1)"></span>
+            <span class="punto" onclick="slideActual(2)"></span>
+            <span class="punto" onclick="slideActual(3)"></span>
+            <span class="punto" onclick="slideActual(4)"></span>
+            <span class="punto" onclick="slideActual(5)"></span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info-contacto">
+            <p>Dirección de la Residencia</p>
+            <p>Teléfono de Contacto</p>
+            <p>Email</p>
+            <div class="redes-sociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="enlaces-rapidos">
+            <a href="./Terminos y Condiciones.html">Terminos y Condiciones</a>
+            <br>
+            <a href="#">Mapa del Sitio</a>
+        </div>
+        <div class="boletin">
+            <form action="#">
+                <label for="email">Suscríbete a nuestro boletín</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="Servicios.js"></script>
+</body>
+</html>

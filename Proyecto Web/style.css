@@ -240,6 +240,32 @@ footer {
     margin-top: 20px;
 }
 
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .terminos {
+        padding: 10px;
+    }
+
+    .seccion-terminos h2 {
+        font-size: 1.2em;
+    }
+
+    .seccion-terminos ul {
+        padding-left: 20px;
+    }
+}
+
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
