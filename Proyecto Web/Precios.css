@@ -1,0 +1,243 @@
+/* EduLux Trabajo
+ * !Aitor Jerez Clemente
+ * ?14/11/2024
+ */
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #6a1b9a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-right: .625rem;
+}
+
+header .logotipo img {
+    height: 6.25rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding-left: 20rem;
+}
+
+header nav ul li {
+    margin-left: 1.25rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+main {
+    display: flex;
+}
+
+.menu-vertical {
+    width: 12.5rem;
+    background-color: #f9f9f9;
+    padding: 1.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: .125rem 0 .3125rem rgba(0,0,0,0.1);
+}
+
+.menu-vertical h2 {
+    color: #6a1b9a;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.menu-vertical h2::after {
+    content: "";
+    width: 3.125rem;
+    height: .1875rem;
+    background: #6a1b9a;
+    display: block;
+    margin: .625rem 0;
+}
+
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-vertical ul li {
+    margin-bottom: .625rem;
+}
+
+.menu-vertical ul li a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: .625rem;
+    border-radius: .3125rem;
+    transition: background-color 0.3s;
+}
+
+.menu-vertical ul li a:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+.contenido {
+    margin-left: 13.75rem; /* Espacio para el menú vertical */
+    width: calc(100% - 13.75rem); /* Ajusta el ancho del contenido */
+    padding: 1.25rem;
+}
+
+.precios h2 {
+    color: #6a1b9a;
+    margin-bottom: 1.25rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+}
+
+table, th, td {
+    border: .0625rem solid #ddd;
+}
+
+th, td {
+    padding: .9375rem;
+    text-align: left;
+}
+
+th {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.info-contacto {
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.info-contacto p {
+    margin: .3125rem 0;
+}
+
+.redes-sociales a {
+    color: white;
+    margin: 0 .625rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: #ffcc00;
+}
+
+.enlaces-rapidos {
+    margin-bottom: 1.25rem;
+}
+
+.enlaces-rapidos a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: .3125rem;
+}
+
+.boletín {
+    text-align: center;
+}
+
+.boletín form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boletín input[type="email"] {
+    padding: .625rem;
+    border: none;
+    border-radius: .3125rem;
+    margin-bottom: .625rem;
+}
+
+.boletín button {
+    padding: .625rem 1.25rem;
+    border: none;
+    border-radius: .3125rem;
+    background-color: #ffcc00;
+    color: #6a1b9a;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boletín button:hover {
+    background-color: #e6b800;
+}
+
+@media (max-width: 48rem) {
+    header nav ul {
+        padding-left: 0;
+    }
+
+    .menu-vertical {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .menu-vertical h2 {
+        text-align: center;
+    }
+
+    .menu-vertical ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-vertical ul li {
+        margin: .625rem;
+    }
+
+    .contenido {
+        margin-left: 0;
+        width: 100%;
+        padding: .625rem;
+    }
+
+    .imagen {
+        margin-bottom: 1.25rem;
+    }
+}

@@ -48,59 +48,19 @@ header nav ul li a:hover {
     color: #ffcc00;
 }
 
-.banner-habitaciones {
-    background-image: url('./Images/banner-habitaciones.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.banner-habitaciones::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(106, 27, 154, 0.6);
-}
-
-.contenido-banner {
-    position: relative;
-    z-index: 1;
-}
-
-.contenido-banner h1 {
-    font-size: 2.5em;
-    margin: 0;
-    animation: fadeInDown 1s;
-}
-
-.contenido-banner p {
-    font-size: 1.2em;
-    margin: 10px 0;
-    animation: fadeInUp 1s;
-}
-
-.habitaciones {
+.contacto {
     padding: 40px 20px;
     text-align: center;
     background-color: #f9f9f9;
 }
 
-.habitaciones h2 {
+.contacto h2 {
     color: #6a1b9a;
     margin-bottom: 20px;
     position: relative;
 }
 
-.habitaciones h2::after {
+.contacto h2::after {
     content: "";
     width: 50px;
     height: 3px;
@@ -109,61 +69,53 @@ header nav ul li a:hover {
     margin: 10px auto;
 }
 
-.tarjetas-habitaciones {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.contacto p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
 }
 
-.tarjeta-habitacion {
-    flex: 1 1 30%;
-    max-width: 30%;
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
     background-color: white;
-    margin: 10px;
     padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.formulario-contacto label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.formulario-contacto input, 
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-}
-
-.tarjeta-habitacion img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.tarjeta-habitacion h3 {
-    font-size: 1.5em;
-    color: #6a1b9a;
-    margin-bottom: 10px;
-}
-
-.tarjeta-habitacion p {
     font-size: 1em;
     color: #555;
-    margin-bottom: 20px;
 }
 
-.tarjeta-habitacion .boton {
+.formulario-contacto button {
     padding: 10px 20px;
     background-color: #6a1b9a;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    border: none;
     border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.tarjeta-habitacion .boton:hover {
+.formulario-contacto button:hover {
     background-color: #4a0d70;
-}
-
-.tarjeta-habitacion:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -254,20 +206,11 @@ footer {
         margin-bottom: 10px;
     }
 
-    .banner-habitaciones {
-        height: 300px;
+    .contacto {
+        padding: 20px;
     }
 
-    .contenido-banner h1 {
-        font-size: 2em;
-    }
-
-    .contenido-banner p {
-        font-size: 1em;
-    }
-
-    .tarjeta-habitacion {
-        flex: 1 1 45%;
-        max-width: 45%;
+    .formulario-contacto {
+        padding: 15px;
     }
 }

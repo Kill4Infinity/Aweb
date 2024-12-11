@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de la Residencia</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Servicios - EduLux</title>
+    <link rel="stylesheet" href="./Servicios.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" type="image/png" href="./Images/favicon__1_-remo vebg-preview.png">
 </head>
@@ -15,63 +15,58 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Habitaciones</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="banner-servicios">
-        <div class="contenido-banner">
-            <h1>Nuestros Servicios</h1>
-        </div>
-    </section>
+    <main>
+        <section class="banner">
+            <div class="contenido-banner">
+                <h1>Servicios de EduLux</h1>
+                <p>Descubre todo lo que tenemos para ofrecerte</p>
+            </div>
+        </section>
 
-    <section class="carrusel-servicios">
-        <div class="slideshow-contenedor">
-
-            <div class="slide desvanecer">
-                <img src="./Images/Wifi.jpeg" style="width:100%">
+        <!-- Contenedor del slideshow -->
+        <div class="contenedor-slideshow">
+            <!-- Imágenes de ancho completo con número y texto de pie de foto -->
+            <div class="misDiapositivas desvanecer">
+                <div class="numerotexto">1 / 3</div>
+                <img src="img1.jpg" style="width:100%">
                 <div class="texto">Wi-Fi Gratuito: Internet de alta velocidad en todas las áreas.</div>
             </div>
 
-            <div class="slide desvanecer">
-                <img src="./Images/Gimnasio.jpeg" style="width:100%">
+            <div class="misDiapositivas desvanecer">
+                <div class="numerotexto">2 / 3</div>
+                <img src="img2.jpg" style="width:100%">
                 <div class="texto">Gimnasio: Equipado con lo último en máquinas de ejercicio.</div>
             </div>
 
-            <div class="slide desvanecer">
-                <img src="./Images/Biblioteca.jpg" style="width:100%">
+            <div class="misDiapositivas desvanecer">
+                <div class="numerotexto">3 / 3</div>
+                <img src="img3.jpg" style="width:100%">
                 <div class="texto">Biblioteca: Un espacio tranquilo para estudiar y leer.</div>
             </div>
 
-            <div class="slide desvanecer">
-                <img src="./Images/Comedor.jpg" style="width:100%">
-                <div class="texto">Comedor: Menús variados y saludables todos los días.</div>
-            </div>
-
-            <div class="slide desvanecer">
-                <img src="./Images/Seguridad.jpg" style="width:100%">
-                <div class="texto">Seguridad 24/7: Personal de seguridad y cámaras en todas las áreas.</div>
-            </div>
-
-            <a class="anterior" onclick="cambiarSlide(-1)">&#10094;</a>
-            <a class="siguiente" onclick="cambiarSlide(1)">&#10095;</a>
+            <!-- Botones siguiente y anterior -->
+            <a class="previo" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="siguiente" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
+        <!-- Los puntos/círculos -->
         <div style="text-align:center">
-            <span class="punto" onclick="slideActual(1)"></span>
-            <span class="punto" onclick="slideActual(2)"></span>
-            <span class="punto" onclick="slideActual(3)"></span>
-            <span class="punto" onclick="slideActual(4)"></span>
-            <span class="punto" onclick="slideActual(5)"></span>
+            <span class="punto" onclick="currentSlide(1)"></span>
+            <span class="punto" onclick="currentSlide(2)"></span>
+            <span class="punto" onclick="currentSlide(3)"></span>
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="info-contacto">
@@ -85,7 +80,7 @@
             </div>
         </div>
         <div class="enlaces-rapidos">
-            <a href="./Terminos y Condiciones.html">Terminos y Condiciones</a>
+            <a href="./Terminos y Condiciones.html">Términos y Condiciones</a>
             <br>
             <a href="#">Mapa del Sitio</a>
         </div>
@@ -98,6 +93,6 @@
         </div>
     </footer>
 
-    <script src="Servicios.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
